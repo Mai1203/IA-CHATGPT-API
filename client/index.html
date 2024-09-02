@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding IA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="modalbox">
+      <img src="./assets/check.png" alt="PopUp" class="cookies"
+      style="height: 50px;">
+      <p class="popup-text">The first response can take up to 40 s while the system is initializing, then you will have instant responses !</p>
+      <button type="button" class="accept-btn" onclick="closeModal()">Accept</button>
+    </div>
+
+    <div id="app">
+      <div id="chat_container"></div>
+      
+      <form >
+        <textarea name="prompt" cols="1" rows="1" placeholder="Feel free to ask ... "></textarea>
+        <button type="submit"><img src="https://img.freepik.com/free-icon/send_318-224252.jpg?w=2000"></button>
+      </form>
+
+    </div>
+    <script>
+      // --------------------------POP UP
+let modalBox = document.getElementById('modalbox')
+
+function closeModal() {
+    modalBox.style.display = "none";
+}
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
